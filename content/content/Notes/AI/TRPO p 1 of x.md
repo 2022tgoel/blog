@@ -5,12 +5,11 @@ Two key facts:
 $\sum_a \pi(a|s) A_\pi(s, a) = 0$ because $\sum_a \pi(a | s) Q_\pi(a, s) = V_\pi(a, s)$ 
 
 Additionally
+$\nabla \pi^*(a | s) = \pi'(a | s) - \pi_{old}(a|s)$
 
-$\nabla^2 \pi^* = 0$
+$\sum_s \nabla^2 \pi^* = 0$
 
 $\nabla^2 \eta (\pi^*) = 2 \sum_{s'} \sum_{a'} p_{\pi^*} (s') \nabla \pi^*(a' | s')\gamma \sum_s p_{\pi^*}(s |s', a') \sum_a \nabla \pi^*(a | s) A_\pi(s, a)$    
-
-$\nabla \pi^*(a | s) = \pi'(a | s) - \pi_{old}(a|s)$
 
 Thus,
 

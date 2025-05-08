@@ -22,7 +22,7 @@ For frobenius norm this means
 
 $||A||_{F*} = \sup_{||B|| \leq 1} tr(AB^T)$
 
-Suppose $A, B \in \R^{m \times n}$, $m < n$.
+Suppose $A, B \in \mathbb{R}^{m \times n}$, $m < n$.
 
 Intuitively, if $A=U\Lambda V^T$, we can set $B=\frac{1}{\sqrt{tr(\Lambda^2)}}U\Lambda V^T$
 
