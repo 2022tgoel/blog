@@ -1,0 +1,8 @@
+It seems like obsession inherently has a negative connotation. You're obsessed when you've gone too far, your obsession pervades your life, and you'd be better off spending time on other things like sleep/eating/exercise. 
+
+In this sense, you obviously shouldn't want to become obsessed. There is a kind of "healthy" obsession, which is less about balance in your life, and more about continuing to do something when most people would stop. For example, someone who is "obsessed" with a research idea might spend years working on it when the average person would get bad results after a few weeks and give up. In this case, you still have an incredible interest is an idea that motivates you do exceptional things, but that doesn't mean it's unhealthy. Perhaps the better word is just "passion", but somehow that doesn't always work. For example, it's weird to say that you are "passionate" about your SO, but probably almost everyone is, since they want to interact with their SO an exceptional amount compared to the average individual. 
+
+I'm not sure how important it is to define words super precisely, but I do think I spent a fair amount of time doing this. It helps with using [taboo](https://awestover.github.io/thoughts/taboo).
+
+Here's ChatGPT's thoughts:
+> You recognize that _obsession_ typically implies an unhealthy, imbalanced fixation, whereas _passion_ implies an intense but _normatively positive_ engagement. Yet in some cases, the kind of intensity required for extraordinary achievement _looks_ like obsession from the outside, even if it’s internally sustainable. You also point out that "passion" sometimes feels too weak or too generic to capture the kind of overwhelming, all-encompassing attention you mean.
