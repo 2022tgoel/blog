@@ -36,11 +36,13 @@ Suppose $A \in R^{m \times n}$, then $A^TA$ is symmetric.
 
 Is is also positive semidefinite. This means $x^TA^TAx = ||x||^2\geq 0$, which means that the eigenvalues are real and positive. It can have repeated eigenvalues and eigenvalues of $0$, which means that it is not full rank. But it must be decomposable into $A^TA = U\Lambda U^T$, where $\Lambda$ is real and positive.
 
-Now suppose $Au_i = v_i$, for some basis vector $u_i \in U$. Then $A^Tv_i = u_i$.
+Now suppose $Au_i = \alpha_i v_i$, for some basis vector $u_i \in U$ and some other normalized basis vector $v_i$. 
 
-These $v_i$ must be orthogonal because $u_j^TA^TA u_i = u_j^T \lambda_i u_i = 0 = v_j^T v_i$.
+1. These $v_i$ must be orthogonal because $u_j^TA^TA u_i = u_j^T \lambda_i u_i = 0 = \alpha_i \alpha_j v_j^T v_i$.
+2. $\alpha_i = \sqrt{\lambda_i}$, because $u_i^T A^T A u_i = \lambda_i = \alpha_i^2 v_i^T v_i$ 
+3. $A^T \sqrt{\lambda_i} v_i = \lambda_i u_i$.
 
-In SVD, the eingenvalues are real and positive.
+In SVD, the eigenvalues are real and positive.
 
 ### Steepest Descent
 

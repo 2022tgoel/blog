@@ -1,0 +1,7 @@
+Why go to school? When you're young, I think the answer is pretty obvious, but as you get older and more capable of self-directed work the answer becomes less obvious. 
+
+Here are some reasons you might want to go to school, in order of my perceived value:
+
+1. Grading. It can be pretty hard to grade yourself if you're learning some new concept. Sure there are answer keys and test cases, but there might be a subtle bug in your code / proof that you would realize if an expert looked at your work carefully. When you don't have anyone to give feedback, you realize that it's pretty easy to do things wrong and develop a sort of paranoia. It's really nice to be able to offload all of the checking work to someone else, have someone *tell* you that what you're doing makes sense, and be able to focus on learning.
+2. Degree: this is probably a nice thing to have.
+3. structure + resources: if you have become good enough at enforcing structure in your life and using the internet, I don't think you need to go to school for this. There are some high-quality classes where I think it is substantially more efficient to have access to school structure+resources since experts will be better at choosing these things than you.
