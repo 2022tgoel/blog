@@ -30,8 +30,15 @@ By Lagrange multipliers, we want to choose the direction such that
 
 $E_{s \sim p_\pi}[A] \Delta \theta = g$, where $g$ is $\nabla_\theta L(\theta) = E_{s \sim p_\pi, a \sim \pi} [\frac{\nabla_\theta \pi_\theta(a | s)}{\pi(a | s)} Q(s, a)] = \nabla_\theta E_{s \sim p_\pi, a \sim \pi} [\log \pi_\theta(a | s) Q(s, a)]$   
 
-A key fact is that the fisher information matrix is symmetric, since it's a Jacobian. Thus, we know that all of the eigenvectors are orthogonal, and can apply conjugate gradient descent. 
-
-How to multiply by the fisher information matrix efficiently:
+A key fact is that the fisher information matrix is symmetric, since it's a Hessian. Thus, we know that all of the eigenvectors are orthogonal, and can apply conjugate gradient descent. 
 
 
+proximal policy optimization is actually a simpler version of all of this. Instead of directly enforcing the KL divergence constraint, we bake it into the objective.
+
+PPO-Clip objective:
+
+$E_{s \sim p_\pi, a \sim \pi} [\frac{\pi_\theta(a | s)}{\pi(a | s)} A(s, a)]$
+
+becomes
+
+$E_{s \sim p_\pi, a \sim \pi} [\text{clip}(\frac{\pi_\theta(a | s)}{\pi(a | s)}, 1-\epsilon, 1+\epsilon) Q(s, a)]$ 
