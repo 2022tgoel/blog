@@ -20,3 +20,21 @@ The lock is implemented through a compare-and-swap of the versions. This doesn't
 Commit: first to the backups and then to the primaries. 
 
 
+
+## DynamoDB
+
+**Serializability**: The result of executing concurrent transactions is equivalent to *some* serial order. It does not have to correspond to any real-time ordering though. If A and B execute concurrently, then either A is before B or vice versa, but even if A executed entirely before B,
+
+**Linearizability:** Each operation takes place instantaneously at a point between the start and end. This real-time constraint makes linearizability harder.
+
+The difference between these two is subtle. Notably, for a system with only writes, it wouldn't really be useful to support serializability but not linearizability. The main advantage comes with reads -- sometimes, it is helpful to allow a read look like it executed far before when it actually did in real-time (think about snapshot isolation in spanner). 
+
+DynamoDB uses a very similar optimistic concurrency design for reads as FaRM. The objects are read without locking, but with sequence numbers. The problem is once again that a transaction can happen completely between reads:
+
+1. Read transaction part one reads x
+2. Write transaction writes x, y
+3. Read transaction part two reads y
+
+So, we add another phase that reads the items once again and checks that the sequence numbers match. For this example, the sequence number check would fail for x and the transaction would abort. 
+
+Timestamp ordering is an interesting design choice, I don't think I fully understand it yet. 
