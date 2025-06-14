@@ -15,3 +15,12 @@ pretty cool lecture on optimal transport theory: https://www.youtube.com/watch?v
 Other things that could be worth looking at:
 --> https://www.statslab.cam.ac.uk//~jpm205/teaching/lent2016/
 --> https://mufan-li.github.io/OT1/
+
+This is a good way to think about generative approaches: https://yang-song.net/blog/2021/score/
+
+---
+
+strong conversations are so fun!
+
+---
+
