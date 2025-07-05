@@ -1,0 +1,3 @@
+https://nintil.com/critiques-ea
+
+Another critique of longtermism is that improving life now is instrumentally good. If some longevity drug increased healthspan by 10 years, than xrisk researchers could devote 10 more years to their work which is much more valuable than another xrisk researcher. Imagine your 20s being 20 years long instead of 10 years long, that seems pretty OP. This is also kind of related to the time value of money. You could invest what you earn in yourself when you're young and then donate once you're older and have more money, but if you can create social value now by donating, that social value compounds.
