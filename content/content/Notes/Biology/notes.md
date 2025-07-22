@@ -1,0 +1,10 @@
+The longevity space (or really any bio-subfield) can feel like an overload references to mTOR, autophagy, senescence, and other unfamiliar terms where most of the effort comes in parsing what people are saying rather that digesting some deep mechanistic insight. 
+
+Here I want to jot down some things that I thought were interesting and explained some mechanism. Unfortunately, the notes will probably still be filled with buzzwords since I don't have a better language for expressing it.
+
+* There are 64 codons ($4^3$) for 20 amino acids. Naturally, this means that there is a lot of redundancy in which codons correspond to which amino acid. Methionine is an interesting amino acid because it only has one codon, and that codon is also the start codon. There are two tRNA sequences for methinione, one of which is recognized by the initiation complex and is used to start transcription, and the other is the regular methionine tRNA. This is why methionine restriction (methionine is more prevalent in animal-based protein sources than plant-based sources) is often linked to longevity (e.g. https://pmc.ncbi.nlm.nih.gov/articles/PMC5008916/) -- high methionine levels encourage continuous protein synthesis and activate mTOR / growth signaling pathways. 
+
+* https://www.youtube.com/watch?v=mMl9eHC4kyA -- this is a really good video that disambiguates a lot of what people usually mean when they say something is "anti-inflammatory" (usually that it just has a bezene ring somewhere / can stably harbor a radical) and why ROS are bad. 
+	* For example there are some people (usually not scientists) who think cardio is bad for you. Basically the reason they think that is because it will cause acute oxidative stress through the leakage of elections that react with $O_2$ to produce superoxide (This is $O_2$ with an electron). 
+
+* more stuff to be added!
