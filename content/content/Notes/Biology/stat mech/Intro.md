@@ -38,6 +38,18 @@ This leads to a deep result: in the geometry of phase space,  $\rho$ is constant
 #### The Caveat
 Now it actually turns on phase space is not the right space for microstates, because particles are *indistinguishable* so microstates that are separate points in phase space might not actually be the same state. So, for example, a momentum coordinate of $(2, 1, 2)$ for 3 particles is the same as $(2, 2, 1)$ and $(1, 2, 2)$, so it can have a weight of 3, while the state $(1, 2, 3)$ will have a weight of 6. So in the world of indistinguishable particles, every distinct microstate isn't actually equally likely. Now why this doesn't change the definition of entropy isn't super clear to me, maybe there is some simplification going on. 
 
+## Ergodic Hypothesis
+
+This is interesting, because it is a *hypothesis*, and it very well could be false (though this seems unlikely), in which case the foundations of stat mech would shatter. From Louiville's we have that the probability density along a trajectory in phase-space is constant, assuming that trajectory follows the laws of physics. The ergodic hypothesis is that the probability-weighted (or, equally-weighted) time-average of any thermodynamic quantity ($V$, etc.) along that trajectory is equal to the ensemble average over all states of the same energy. This would be trivially true if one could show that a trajectory will visit every possible point with the same energy, which is basically the ergodic claim.  
+
+## Entropy
+
+As I mentioned earlier, entropy is
+
+$Ω(E)=\frac{1}{h^{3N}N!}​∫δ(E−H(p, q))d^{3N}pd^{3N}q,$
+
+Now this is actually an infinite quantity unless we impose limits of integration on the position coordinates. This will be done by confining the positions to be within an object of volume $V$, giving us the ultimate result that entropy depends on $E, V, N$. In [[Definitions]], I explain that these are the extensive quantities. 
+
 ## Microcanonical and Canonical Ensembles
 
 Having established that, we're going to switch from expressing states as points in phase space to expressing them as lists of occupation numbers $\{n_r\}$. This is basically expressing $2^N$ momentum coordinates, and ignores the position degrees of freedom, which can be thought of as a scalar independent from E.

@@ -36,7 +36,9 @@ Then
 
 $g'(\lambda) = f(x_1, x_2, .., x_n) = \sum_i x_i \frac{\partial f}{\partial x_i}$. 
 
+Thus, $E = TS - pV + \mu N$ 
 
+Basically, the intuition you should be getting here is that there is no constant factor $C$ and that the derivatives have no dependence on $\lambda$ (that makes them intensive!)
 ## Important quantities
 
 Hemholtz free energy: $F = E - TS$ 
@@ -45,4 +47,4 @@ Enthalpy: $H = E + pV$
 
 Gibbs Free energy: $G = E + pV - TS = F + pV$
 
-These must be **extensive properties**. Proof
+These must be **extensive properties**. 
