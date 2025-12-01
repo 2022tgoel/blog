@@ -7,7 +7,7 @@
 6. Resolution
 
 
-Originally this post ended here, because I was mostly trying to make sure I remember this story structure after I failed for the second time to write a complete plot in my story :/. But let me actually say a bit more about writing stories. Obviously, this is a very helpful formula for create an interesting story. But you don't have to follow it; I barely have in my stories. For example, you could write a story about someone going on a walk, and they're just in their own head thinking about random stuff, and it could still be really engaging. Writing has no *strict* rules, only things that work (and they might only work for some people!) and things that don't.  
+Originally this post ended here, because I was mostly trying to make sure I remember this story structure after I failed for the second time to write a complete plot in my story :/. But let me actually say a bit more about writing stories. Obviously, this is a very helpful formula for create an interesting story. But you don't have to follow it; I barely have in my stories. For example, you could write a story about someone going on a walk, and they're just in their own head thinking about random stuff, and it could still be really engaging. Writing has no *strict* rules, only what works (and it might only work for some people!) and what doesn't.  
 
 Why should you try creative writing? 
 

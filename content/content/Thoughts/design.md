@@ -1,4 +1,4 @@
-fIf you're in a role where you're architecting some system, you will likely be subject to bureaucracy. For good reason. The tiniest details of your design will have implications for the people using and maintaining it for years, so you'll have to convince people you chose them correctly. 
+If you're in a role where you're architecting some system, you will likely be subject to bureaucracy. For good reason. The tiniest details of your design will have implications for the people using and maintaining it for years, so you'll have to convince people you chose them correctly. 
 
 If you're doing research and you need resources, you need to convince someone that the answers you're looking for are important enough to warrant funding. But once you have that, you're golden. People won't care as much about the details of your process. They'll only care about the answers that you find.
 
