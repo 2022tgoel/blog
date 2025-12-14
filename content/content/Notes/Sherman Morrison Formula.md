@@ -17,6 +17,8 @@ Basically the inverse is super annoying, but it kind of helps that the matrix th
 
 $(A + uv^T)^{-1} = A^{-1} + \frac{A^{-1} u v^T A^{-1}}{1 + v^T A^{-1} u}$ 
 
-$\begin{align}(A^{-1} - \frac{A^{-1} u v^T A^{-1}}{1 + v^T A^{-1} u}) (A + u v^T) \\ &= (I + A^{-1} u v^T - \frac{A^{-1} u v^T + A^{-1} u v^T A^{-1} u v^T}{1 + v^T A^{-1} u}) \\ &= (I + A^{-1} u v^T - \frac{A^{-1} u v^T + A^{-1} u v^T A^{-1} u v^T}{1 + v^T A^{-1} u}) \\ &= (I + A^{-1} u v^T - \frac{ A^{-1} u (1 + v^T A^{-1} u) v^T }{1 + v^T A^{-1} u}) \\ &= I \end{align}$ 
+$$
+\begin{align*}(A^{-1} - \frac{A^{-1} u v^T A^{-1}}{1 + v^T A^{-1} u}) (A + u v^T) \\ &= (I + A^{-1} u v^T - \frac{A^{-1} u v^T + A^{-1} u v^T A^{-1} u v^T}{1 + v^T A^{-1} u}) \\ &= (I + A^{-1} u v^T - \frac{A^{-1} u v^T + A^{-1} u v^T A^{-1} u v^T}{1 + v^T A^{-1} u}) \\ &= (I + A^{-1} u v^T - \frac{ A^{-1} u (1 + v^T A^{-1} u) v^T }{1 + v^T A^{-1} u}) \\ &= I \end{align*}
+$$ 
 
 

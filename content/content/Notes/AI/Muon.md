@@ -93,3 +93,41 @@ Adam, without EMA, is sign gradient descent.
 **Sign descent as steepest descent under infinity norm**
 
 When the norm is $||..||_\infty$, then $w = \frac{||g||_1}{\lambda}\text{sgn}(g)$ 
+
+## Resources
+
+https://fdangel.com/posts/kfac_explained.html
+
+https://kvfrans.com/matrix-whitening/
+
+https://lucasjanson.fas.harvard.edu/papers/A_New_Perspective_On_Shampoos_Preconditioner-Morwani_ea-2024.pdf
+
+[Central Flows](https://arxiv.org/pdf/2410.24206) 
+
+https://www.cs.toronto.edu/~jmartens/docs/HF_book_chapter.pdf
+
+https://indrag49.github.io/Numerical-Optimization/conjugate-gradient-methods-1.html
+
+https://arxiv.org/pdf/2507.12224
+
+## Nesterov Momemtum
+
+$$
+\begin{aligned}
+&v_{t+1} = \mu v_t - \nabla f(\theta_t + \mu v_t)\\
+&\theta_{t+1} = \theta_t + v_{t+1}
+\end{aligned}
+$$
+
+Now suppose you are at $\theta = \theta_t + \mu v_t$ and have calculated $g$ through backpropogation. If you want to finish the update,
+
+$$
+\begin{aligned}
+\theta_{t+1} &= \theta - g \\
+v_{t+1} &= \mu v_t - g \\
+\theta_{t+1} + \mu v_{t+1} &= \theta - g + \mu v_{t+1} \\
+&= \theta + \mu^2 v_t - (1 + \mu) g 
+\end{aligned}
+$$
+
+Note that the scale is $\frac{1 + \mu}{1-\mu^2} = \frac{1}{1 - \mu}$, so you have the same long-horizon scale factor. 

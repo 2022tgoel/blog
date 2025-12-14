@@ -44,7 +44,9 @@ $Z(t) = \exp({-\int_0^t b(s) \cdot dW(s) - \frac{1}{2} \int_0^t |b(s)|^2 ds})$
 
 $dZ(t) = -Z(t) b(t) \cdot dW(s)$ 
 
-$\begin{align}d(\tilde{W}Z) &= Z(t) d\tilde{W_i} + \tilde{W_i} dZ - Z(t) \tilde{W}_i b(t) \cdot dW(s) \\ & =   Z(t) dW_i + Z(t) b_i(t)dt + (\tilde{W}_i + d\tilde{W}_i) dZ \\ & =   Z(t) dW_i + Z(t) b_i(t)dt + (\tilde{W}_i + dW_i + b_i dt) dZ \\ & = Z(t) dW_i + Z(t) b_i(t)dt -(\tilde{W}_i + dW_i) Z(t) b \cdot W \\ & = Z(t) dW_i + Z(t) b_i(t)dt -\tilde{W}_i Z(t) b \cdot dW - b_i Z(t) \\ & = Z(t) dW_i -\tilde{W}_i Z(t) b \cdot dW \end{align}$      
+$$
+\begin{align*}d(\tilde{W}Z) &= Z(t) d\tilde{W_i} + \tilde{W_i} dZ - Z(t) \tilde{W}_i b(t) \cdot dW(s) \\ & =   Z(t) dW_i + Z(t) b_i(t)dt + (\tilde{W}_i + d\tilde{W}_i) dZ \\ & =   Z(t) dW_i + Z(t) b_i(t)dt + (\tilde{W}_i + dW_i + b_i dt) dZ \\ & = Z(t) dW_i + Z(t) b_i(t)dt -(\tilde{W}_i + dW_i) Z(t) b \cdot W \\ & = Z(t) dW_i + Z(t) b_i(t)dt -\tilde{W}_i Z(t) b \cdot dW - b_i Z(t) \\ & = Z(t) dW_i -\tilde{W}_i Z(t) b \cdot dW \end{align*}
+$$      
 
 Since this only has $dW$ terms it is a martingale. 
 
