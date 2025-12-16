@@ -15,10 +15,16 @@ $\Phi = (V_t K_t^T)(K_tK_t^T + \frac{1} {\lambda} I)^{-1}$
 
 Basically the inverse is super annoying, but it kind of helps that the matrix that you are inverting is only receiving a low-rank update $A \rightarrow A + k_t k_t^T$ 
 
-$(A + uv^T)^{-1} = A^{-1} + \frac{A^{-1} u v^T A^{-1}}{1 + v^T A^{-1} u}$ 
+$(A + uv^T)^{-1} = A^{-1} - \frac{A^{-1} u v^T A^{-1}}{1 + v^T A^{-1} u}$ 
 
 $$
 \begin{align*}(A^{-1} - \frac{A^{-1} u v^T A^{-1}}{1 + v^T A^{-1} u}) (A + u v^T) \\ &= (I + A^{-1} u v^T - \frac{A^{-1} u v^T + A^{-1} u v^T A^{-1} u v^T}{1 + v^T A^{-1} u}) \\ &= (I + A^{-1} u v^T - \frac{A^{-1} u v^T + A^{-1} u v^T A^{-1} u v^T}{1 + v^T A^{-1} u}) \\ &= (I + A^{-1} u v^T - \frac{ A^{-1} u (1 + v^T A^{-1} u) v^T }{1 + v^T A^{-1} u}) \\ &= I \end{align*}
 $$ 
 
+### Moore-Penrose Pseudoinverse
 
+$A A^+ A = A$ 
+
+For a rank-1 matrix $A = u u ^T$, $A^+ = \frac{1}{\lVert u \rVert^4} u u^T$ 
+
+If $A = U \Sigma V^T$, $A^+ = V \frac{1}{\Sigma} U^T$ 

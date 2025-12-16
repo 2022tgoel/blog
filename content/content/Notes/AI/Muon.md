@@ -131,3 +131,39 @@ v_{t+1} &= \mu v_t - g \\
 $$
 
 Note that the scale is $\frac{1 + \mu}{1-\mu^2} = \frac{1}{1 - \mu}$, so you have the same long-horizon scale factor. 
+
+## GGN Approximation
+
+If you have a function $L(f(x), y)$
+
+$$
+H_x \approx (J_xf) ^T H_f (J_xf)
+$$
+
+with $f \in \mathbb{R}^n, x \in \mathbb{R}^m$, then $H_f \in \mathbb{R}^{n \times n}, J_xf \in \mathbb{R}^{n \times m}$ 
+
+In the case of the cross entropy loss function, where $f$ are the logits,
+
+$$
+\begin{align*}
+L &= -\sum y_i \log{p_i} \\
+J_f &= p - y\\
+H_f &= \text{diag}(p) - p p^T
+\end{align*}
+$$
+Additionally
+
+$$
+\begin{align*}
+J_xL = (p - y) J_xf
+\end{align*}
+$$
+So if 
+
+$$
+\begin{align*}
+H_x &\approx (J_xf) ^T (\text{diag}(p) - p p^T) (J_xf)\\
+
+\text{reshape}(H) &= \sum_i p_i (G_i \otimes G_i) - \left(\sum_i p_i G_i\right) \otimes \left(\sum_i p_i G_i\right)
+\end{align*}
+$$ 
