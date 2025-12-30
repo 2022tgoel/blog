@@ -1,6 +1,6 @@
 * A **plasmid** is a circular double-stranded DNA molecule. Plasmids are transcribed by the host cell’s machinery, because plasmids contain bacterial promoters. Chromosomes hold essential genes for survival and replicate with the cell, while plasmids are smaller, extrachromosomal DNA loops, often circular, carrying non-essential but advantageous genes (like antibiotic resistance).
 * A **vector** is a plasmid designed to carry foreign DNA. If you just inject a piece of foreign DNA into a cell, it usually gets degraded and doesn't replicate
-* **restriction enzyme**: for opening the plasmid so you can insert the gene . You have to make sure that your restriction enzyme only recognizes one piece of the plasmid. 
+* **restriction enzyme**/**restriction endonuclease**: for opening the plasmid so you can insert the gene . You have to make sure that your restriction enzyme only recognizes one piece of the plasmid. 
 * **pBR322**: is a very successful specific plasmid. 
 * **ORI**: origin of replication
 * **ROP**: repressor of primer. encodes a protein that regulates plasmid copy number. when it decides to stopit codes for a protein that blocks off the ORI. 
@@ -39,6 +39,16 @@ https://stephenmalina.com/post/2023-06-07-editing-part-i/
 
 The vector in this case encodes the genes for a few different things, including:
 - **Cas nuclease** (e.g., Cas9) → cuts DNA
-- **Guide RNA (gRNA)** → tells Cas9 _where_ to cut
+- **Guide RNA (gRNA)** → tells Cas9 _where_ to cut. 
+- This is different from classical restriction endonucleases, where they are hardwired to cut a a specific spot.
 
 * Then, there is a separate component that uses DNA's repair pathway, specifically Homology Directed Repair
+
+Note that plasmids in eukaryotes die out eventually
+
+
+## Ligation
+
+When a resitriction endonuclease makes a cut in a plasmid, it leaves "sticky ends". If these match a foreign DNA (because the DNA was processed using the same restriction enzyme) than it will bind to it and the foreign DNA will be incorporated in. However, the phospates and hydroxlys where the foreign dna and the orignal plasmid won't be bonded. DNA ligase creates the phosphodiester bond. 
+
+**Functional Complementation**: Take a cell that is defective in some function and restore the phenotype through plasmid injection.

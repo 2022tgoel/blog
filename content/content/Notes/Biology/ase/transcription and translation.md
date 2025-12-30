@@ -17,3 +17,5 @@
 	* E: exit
 	* P: peptide something. assembling the chain.
 	* A: amino something. tRNA enters here. 
+* DNA polymerase’s active site can’t stabilize the very first nucleotide pair well enough to start from scratch, thus needing a primer, while RNA polymerase has special features that _do_ stabilize the first 1–2 nucleotide, so it can begin **de novo**
+* **exonucleases** chew up dna from the ends. rna needs to be protected from this. 
