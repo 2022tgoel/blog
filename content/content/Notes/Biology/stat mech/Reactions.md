@@ -30,6 +30,12 @@ And if the temperatures are the same (a typical situation)
 
 $dS_{surroundings} + dS_{system} = -\frac{\mu dN_{system}}{T} \geq 0$ 
 
-Now, since we know gibbs free energy, this means
+Now, since we know this is gibbs free energy, this means
 
 $\Delta G \leq 0$ for the reaction to be spontaneous. 
+
+I was slightly bad with the notation here: $\mu dN_{system}$ should be thought of as $\sum_i \mu_i dN_i$ for each substance $i$ in the reaction.  
+
+The assumptions we made here are:
+* There is equal pressure inside the system and outside the system
+* There is equal temperature inside and outside the system

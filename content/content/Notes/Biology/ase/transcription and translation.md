@@ -19,3 +19,14 @@
 	* A: amino something. tRNA enters here. 
 * DNA polymerase’s active site can’t stabilize the very first nucleotide pair well enough to start from scratch, thus needing a primer, while RNA polymerase has special features that _do_ stabilize the first 1–2 nucleotide, so it can begin **de novo**
 * **exonucleases** chew up dna from the ends. rna needs to be protected from this. 
+
+* DNA melting temperature depends on GC content (because GC bonds are stronger, three H bonds instead of two)
+* Origins of replication are AT-rich (TATA box, etc.) it's because they are easier to unravel!
+
+AT-rich genomes:
+- More prone to strand separation
+- Often faster replication
+
+GC-rich genomes:
+- More stable
+- More resistant to heat
