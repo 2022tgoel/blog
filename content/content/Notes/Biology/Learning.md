@@ -12,6 +12,9 @@ The hippocampus is in the medial temporal lobe, a specific region (though the wh
 *Classical conditioning* is the formation of a predictive relationship between two stimuli (**pretraining**), *operant conditioning* can be considered as the formation of a predictive relationship between an action and an outcome (**RL**).
 
 Motivationally significant events are prioritized in memory through the enhancement of encoding, storage, and consolidation processes.
+### Channels
+In general, the calcium and sodium concentrations are higher outside the neuron, and the potassium concentration is high inside the neuron. This is why sodium and calcium will rush in when the ion channels open. 
+
 ### Neurons
 ##### Ionotropic receptors
 The receptor **is** the ion channel.
@@ -39,7 +42,7 @@ In *homosynaptic depression*, every time a sensory neuron is fired, it releases 
 1. serotonin released from the interneurons
 2. serotonin binds to a G protein-coupled receptor
 3. This increases the activity of adenylyl cyclase
-4. The activates cyclic adenosine monophosphate (cAMP)
+4. The activates cyclic adenosine monophosphate (cAMP) (conversion ATP --> cAMP)
 5. cAMP activates cAMP-dependent protein kinase (PKA)
 6. protein phosphorylation mediated by PKA and PKC enhances the release of transmitter from sensory neurons
 	1. PKA phosphorylates the K+ channel, causing it to close
@@ -48,3 +51,21 @@ In *homosynaptic depression*, every time a sensory neuron is fired, it releases 
 With conditioning, the response can be even stronger than the response from sensitization. Why? Because when a sensitization response follows an action potential from a previous reaction, then Ca2+ has recently bound to the adenyl cyclase, which increases its activity and strengthens the whole signaling response. 
 
 ![[Screenshot 2026-01-09 at 11.40.59 AM.png]]
+
+### Consolidation
+
+Repeated activation of the sensitization / conditioning pathways leads to a steady rise in cAMP. This triggers a cascade that causes transcription factor CREB-1 to be activated, which binds to promotor region CRE. One gene activated by CREB-1 encodes a ubiquitin hydrolase, a component of a specific ubiquitin proteasome that leads to the proteolytic cleavage of the regulatory subunit of PKA, resulting in persistent activity of PKA, even after cAMP has returned to its resting level. CREB-1 also activates the expression of the transcription factor C/EBP, which leads to expression of a set of unidentified proteins important for the growth of new synaptic connections
+
+![[Screenshot 2026-01-09 at 4.42.50 PM.png]]
+![[Screenshot 2026-01-09 at 4.43.18 PM.png]]
+
+
+How are only specific synapses targeted by this change in the epigenetic state of the cell? Well, there was an experiment where a researcher took a sensory neuron with two terminal synapses. They gave one synapse five pulses of serotonin, which is enough to facilitate long-term memory at that synapse (but left other other synapse unchanged!). However, if they also gave *one* pulse of serotonin at the other synapse, both got long term growth. The large dose at one synapse *did* affect the other synapse. This means that there is some kind of binary marking mechanism of which synapses had activity. This process is called synaptic capture/tagging. 
+
+### Long-Term Potentiation
+
+Long-term potentiation in the lateral nucleus of the amygdala is triggered by Ca2+ influx into the postsynaptic neurons in response to strong synaptic activity. The Ca2+ entry is mediated by the opening of both N-methyl-d-aspartate (NMDA)-type glutamate receptors and L-type voltage-gated Ca2+ channels in the postsynaptic cell. Because NMDA receptors are normally blocked by extracellular Mg2+, they require a large synaptic input to generate enough postsynaptic depolarization to relieve this blockade. They also obviously need the glutamate from the presynaptic neuron firing. 
+
+### Random Facts
+* in the nematode C. elegans, every individual has exactly 302 neurons, and they’re always in the same place and connected the same way
+* Neural firing is energetically expensive — it’s much cheaper to transmit signals via releasing chemicals which travel diffusively! However, diffusive signaling spreads only as distance ~ time^1/2, which ends up meaning it’s usually not a good choice when you need to go, say, more than a millimeter in one direction. Chemical computing tends also to require fewer parts and take up less space.
