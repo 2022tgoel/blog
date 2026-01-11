@@ -66,6 +66,31 @@ How are only specific synapses targeted by this change in the epigenetic state o
 
 Long-term potentiation in the lateral nucleus of the amygdala is triggered by Ca2+ influx into the postsynaptic neurons in response to strong synaptic activity. The Ca2+ entry is mediated by the opening of both N-methyl-d-aspartate (NMDA)-type glutamate receptors and L-type voltage-gated Ca2+ channels in the postsynaptic cell. Because NMDA receptors are normally blocked by extracellular Mg2+, they require a large synaptic input to generate enough postsynaptic depolarization to relieve this blockade. They also obviously need the glutamate from the presynaptic neuron firing. 
 
+
+#### Hippocampus
+
+
+![[Screenshot 2026-01-11 at 8.45.52 AM.png]]
+
+
+There are two pathways to CA1, one indirect and one direct pathway. 
+
+* LTP at the mossy-fiber pathway is largely presynaptic (driven by Ca2+ influx at the presynaptic terminals) and therefore non-associative (doesn't depend on the postsynaptic neuron firing)
+* At the schaffer collateral pathway, LTP is associative, relying on the NDMA receptors
+* The direct pathway uses NDMA receptors and L-type voltage-gates Ca2+ channels
+* The AMPA receptor is the one that starts the action potential at the postsynaptic neuron. However, it some cases, there are "silent synapses," which work when the postsynaptic neuron is depolarized, because this means that the NDMA receptor is unblocked. There are only NDMA receptors at the postsynaptic neuron, not AMPA receptors. At these synapses, adding AMPA receptors results in a strong strengthening of the response. 
+* The NDMA pathway builds new AMPA receptors. This increases its response to glutamate. It also sends signals to the presynaptic neuron to release more glutamate. 
+* Late LTP is what uses CREB and gene transcription to recruit new proteins
+
+![[Screenshot 2026-01-11 at 9.04.21 AM.png]]
+
+### Long Term Depression
+There are two mechanisms that cause this
+1. A long low-frequency stimulation
+2. A "reverse" pathway, where the postsynaptic neuron depolarizes right before the presynaptic neuron release glutamate
+
+A low-frequency tetanus basically lets it a significantly smaller amount of Ca2+ through the NDMA receptor. This is not enough to activate the same molecules that are involved in LTP, but a different set of molecules that have a higher affinity for Ca2+.
+
 ### Random Facts
 * in the nematode C. elegans, every individual has exactly 302 neurons, and they’re always in the same place and connected the same way
 * Neural firing is energetically expensive — it’s much cheaper to transmit signals via releasing chemicals which travel diffusively! However, diffusive signaling spreads only as distance ~ time^1/2, which ends up meaning it’s usually not a good choice when you need to go, say, more than a millimeter in one direction. Chemical computing tends also to require fewer parts and take up less space.

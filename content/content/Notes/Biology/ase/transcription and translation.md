@@ -30,3 +30,7 @@ AT-rich genomes:
 GC-rich genomes:
 - More stable
 - More resistant to heat
+
+### DNA transcription
+
+In eukaryotes, there is a lot more DNA (billions of base pairs) than in some prokaryotes (millions of base pairs). Also, DNA replication is slower because it needs to be super accurate, unlike RNA replication. Thus, DNA replication is parallelized by having multiple origins of replication, and each produces a strand that starts with a short **RNA primer** which is removed and is called an **Okazaki fragment**. 
