@@ -48,3 +48,25 @@ Enthalpy: $H = E + pV$
 Gibbs Free energy: $G = E + pV - TS = F + pV$
 
 These must be **extensive properties**. 
+
+## Entropy of Mixing
+
+This is fundamental to why Gibbs free energy gives you a ratio. You can usually just think of entropy as the log of the number of position lists times the number of energy lists you can come up with which are consistent with the macroscopic variables. But because the particles are indistinguishable, you get **Gibb's paradox**, so you need to divide everything by $N!$. However, if you have two distinguishable types of particles, you can actually add some of these combinations back. In particular, you can add $\log{\frac{(N_A + N_B)!}{N_A! N_B!}}$ 
+
+How does can you derive the concentration analyses that people use all the time from this? Good question. 
+
+$\Delta \mathcal{G}_0$ is change in free energy under **standard conditions**. 
+
+###### What is standard conditions? 
+Standard conditions mean each species is at unit activity. Standard pressure: $p^\degree = 1$ . Standard concentration $c^\degree = 1$ M. Standard temperature: $T = 298.15 K$ is common.  Standard states are not the reacting system. They are an hypothetical world where you only have the one substance. 
+
+
+Using stirling's approximation, we have that entropy of the mixing is $-\sum_i n_i \ln{n_i / n}$
+
+For a reaction $A \rightarrow B$, we care about $[A]$ . Entropy of mixing is $\propto - [A] \ln{[A]} - (([B] + [A]).\text{stopgradient}() - [A]) \ln{([B] + [A]).\text{stopgradient}() - [A])}$  (Alas my notation is so cursed...)
+ 
+Then means that $\frac{\partial G}{\partial [A]} = - \ln{[A]} + \ln{[B]} = \ln{\frac{[B]}{[A]}}$ . Now we are getting something that looks like the concentration of products to reactants. 
+
+
+
+
