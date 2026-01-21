@@ -206,17 +206,34 @@ $F(\theta) = E\left[ \nabla_\theta \log p(x | \theta) (\nabla_\theta \log p(x | 
 
 $E\left[-\nabla_\theta^2 \log_\theta p(x) \right]$
 
-## Reading List
+## Manifold Muon: Subgradients
 
-https://arxiv.org/pdf/2505.21799
+$\text{msign}(X)$ is notably the *subgradient* of the nuclear norm. This is because for a rank-deficient matrix introducing new ranks would always strictly increase the nuclear norm. So the graph looks a little bit like $|x|$ in the directions not present in $X$. This is bad for convergence, because the gradients should get smaller as you converge (helpful to think about a parabola), but they don't really. 
 
-https://arxiv.org/pdf/2509.26030
+Redoing the derviation:
 
----
-https://arxiv.org/pdf/2110.01765
+$\min \text{tr}(G^TA)$ s.t. $A^T W + W^T A = 0$ and $||A|| \leq \eta$
 
-https://main-horse.github.io/translations/nccl/
 
-https://proceedings.neurips.cc/paper_files/paper/2024/file/986292a930c3692168b177a770025ab3-Paper-Conference.pdf
+$= \min_X \max_\Lambda {\text{tr}(G^TA + \Lambda ( A^TW + W^T A)}$ 
 
-https://arxiv.org/abs/1711.04735
+$=  \max_\Lambda \min_X {\text{tr}((G^T+ (\Lambda^T + \Lambda) W)A}$ 
+
+solving a spectral norm problem
+
+suppose we have 
+
+$\min {\frac{1}{p} ||X||_* + \frac{1}{2}||X + Y||_F^2}$ as our subproblem (this shows up in the ADMM subproblem) 
+where the norm is nuclear norm
+
+Then out solution is $\sum \frac{1}{p} \lambda_i + \sum \frac{1}{2} (\sigma_i - \lambda_i)^2$
+
+The derivative wrt $\lambda_i$ is $\frac{1}{p} - (\sigma_i - \lambda_i) = 0$
+
+So 
+
+$\lambda_i = \sigma_i - \frac{1}{p}$
+
+But we have to be careful to not go past 0. So $\sigma_i \rightarrow \min(\frac{1}{p}, \sigma_i)$  
+
+https://sdbuchanan.com/blog/manifold-muon/#mjx-eqn%3Aeq%3Amanifold-muon

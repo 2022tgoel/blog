@@ -94,3 +94,25 @@ A low-frequency tetanus basically lets it a significantly smaller amount of Ca2+
 ### Random Facts
 * in the nematode C. elegans, every individual has exactly 302 neurons, and they’re always in the same place and connected the same way
 * Neural firing is energetically expensive — it’s much cheaper to transmit signals via releasing chemicals which travel diffusively! However, diffusive signaling spreads only as distance ~ time^1/2, which ends up meaning it’s usually not a good choice when you need to go, say, more than a millimeter in one direction. Chemical computing tends also to require fewer parts and take up less space.
+
+
+## Brains automatically perform probabilistic computation
+
+https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/final_exam/YangShadlen2007.pdf
+
+Experiment setup:
+* Monkey
+* You show them 4 shapes from a set of 10.
+* There are two options to pick from, red or green. The log-odds of the options are given by $\sum_i w_i$, where each shape has weight $w_i$. 
+* So in total, there are ${10 \choose 4} + 3 * {10 \choose 3} + 3 * {10 \choose 2} + {10 \choose 1} = 715$ total inputs / log-odds they could come to. This is way too much to memorize. 
+
+If the sum of weights $w$ is the log-odds, then $P(\text{red}) = \frac{e^w}{1 + e^w}$   
+
+![[Screenshot 2026-01-21 at 1.07.24 PM.png]]'
+
+Amazingly, the monkeys intuitively learn this logistic function:
+
+![[Screenshot 2026-01-21 at 1.09.26 PM.png]]
+
+
+The parietal lobs has spatially selective persistent activity. Basically, there are one set of neurons that fire when you plan of move you eyes in one direction, and another set of neurons when you plan to move your eyes in a different direction. The firing rate of these neurons also depends on log odds (linearly) and this is outside of the final decision made by the monkey. 
