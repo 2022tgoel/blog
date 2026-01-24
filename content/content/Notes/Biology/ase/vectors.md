@@ -41,6 +41,7 @@ The vector in this case encodes the genes for a few different things, including:
 - **Cas nuclease** (e.g., Cas9) → cuts DNA
 - **Guide RNA (gRNA)** → tells Cas9 _where_ to cut. 
 - This is different from classical restriction endonucleases, where they are hardwired to cut a a specific spot.
+- **Reverse transcriptase** (RNA-dependent DNA polymerase) is a key molecule that can convert RNA into DNA, so that it can be inserted into the genome. This is how a **retrovirus** works. 
 
 * Then, there is a separate component that uses DNA's repair pathway, specifically Homology Directed Repair
 
@@ -52,3 +53,10 @@ Note that plasmids in eukaryotes die out eventually
 When a resitriction endonuclease makes a cut in a plasmid, it leaves "sticky ends". If these match a foreign DNA (because the DNA was processed using the same restriction enzyme) than it will bind to it and the foreign DNA will be incorporated in. However, the phospates and hydroxlys where the foreign dna and the orignal plasmid won't be bonded. DNA ligase creates the phosphodiester bond. 
 
 **Functional Complementation**: Take a cell that is defective in some function and restore the phenotype through plasmid injection.
+
+
+## Cell Barcoding
+
+Make a pouch with a bunch of barcodes and a single cell, and then lyse the cell -- the RNA spills out
+
+You have a `[UMI] - poly(dT)`. The `poly(A)` tail in the mRNA binds of the `poly(dT)` tail. Then a reverse transcriptase extends the sequence to `[UMI] - poly(dT) - cDNA`. 

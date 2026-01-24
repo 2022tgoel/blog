@@ -5,6 +5,10 @@
 	* For example there are some people (usually not scientists) who think cardio is bad for you. Basically the reason they think that is because it will cause acute oxidative stress through the leakage of elections that react with $O_2$ to produce superoxide (This is $O_2$ with an electron). 
 
 
+* **Rapamycin**: This mainly affects the mTOR / growth signaling pathways, which are linked to cancer (mTOR is frequently overactive in cancer). So it has an affect on reducing the change of cancer by reducing the rate of cell division in a similar nature to CR.  Rapamycin is not an endogenous metabolite that goes down with age (the case of [taurine](https://www.science.org/content/blog-post/taurine)), but rather a hack to crank up pathways that have effects that we mostly want
+* AMPK is the opposite of mTOR, activated by a high **AMP/ATP ratio**
+
+
 
 Cardiovascular Disease, Cancer, and Neurodegenerative diseases are the big three dominant causes of death in long-lived populations. 
 

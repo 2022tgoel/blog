@@ -11,6 +11,9 @@
 	* Suposed you have two genes, of different chromosomes, and a dominant and recessive version of both (A, a, B, and b)
 	* Then if there is no recombination, after meiosis 1, the chromosome copies in a single cell are identical. Therefore, the resulting haploid cells are identical. This means you can only get two different versions of the cell, which are the parental ditype and non-parental ditype. This is (AB AB ab ab) and (Ab Ab aB aB)
 	* However, if you do have a recombination event somewhere between the gene and the centromore, then you can get the *tetratype* (AB Ab aB ab)
+
+* Bacteria can tolerate higher mutation rates, because they are single-celled organisms. If one cell mutates too much, that doesn't compromise more than one cell in a sea of billions, but if you cell mutates too much in a human that can cause cancer which compromises the whole human, and losing an entire human is a much larger cost than losing a single bacterial cells
+* There are several reasons for why storing two copies of a gene makes sense. One is that it is a safety against cancer -- if you are homozygous for a cancer-inducing gene than your chance of getting the cancer is really low, since you almost certainly won't get mutations in the same place in both your copies in the gene. The other argument is that a mutation won't make you lose the original function of the gene. If you only have one copy, and it mutates, you lose whatever advantage that gene was providing, so the advantage that the new gene provides needs to be *larger* than the original gene (as opposed to solely needing to actually have some advantage). 
 #### Cell Division
 
 - **Mitosis:** A single cell division that produces two genetically identical daughter cells with the same number of chromosomes as the parent cell. 
