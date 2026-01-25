@@ -95,6 +95,12 @@ A low-frequency tetanus basically lets it a significantly smaller amount of Ca2+
 * in the nematode C. elegans, every individual has exactly 302 neurons, and they’re always in the same place and connected the same way
 * Neural firing is energetically expensive — it’s much cheaper to transmit signals via releasing chemicals which travel diffusively! However, diffusive signaling spreads only as distance ~ time^1/2, which ends up meaning it’s usually not a good choice when you need to go, say, more than a millimeter in one direction. Chemical computing tends also to require fewer parts and take up less space.
 
+### GABA switch
+
+* GABA is a neurotrasmitter for Cl- channels
+* In the beginning, Cl- concentration is higher inside the neuron, so GABA triggers an *excitatory* response. 
+* Later on, Cl- concentrations in the outside become larger, so GABA triggers an *inhibitory response*.
+* Early brains need excitation and synchrony to wire themselves up in the beginning; mature brains need inhibition and precision to compute
 
 ## Brains automatically perform probabilistic computation
 

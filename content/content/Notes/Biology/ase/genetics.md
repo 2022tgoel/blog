@@ -21,3 +21,23 @@
 
  
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Meiosis_Overview_new.svg/330px-Meiosis_Overview_new.svg.png)
+
+
+### mtDNA
+
+* mtDNA in is inherited from the mother and perserved extremely well because of *muller's ratchet*
+* A human somatic cell has 1,000 - 5,000 copies of mtDNA per cell
+* It is also tightly wound in **TFAM (mitochondrial transcription factor A)** which is a histone-like thing
+* In a area surrounded by antioxidants to protect against ROS 
+
+###### Co-Location for redox regulation hypothesis
+
+The electron transport chain complexes need to be created immediately when the energy demand increases. It's too slow to wait for the protein to be imported from the cytosol, so you need the mtDNA right there. Also these complexes are *exteremly hydrophobic*, which makes them hard to move. 
+
+*Why can't you do post-translational control?* 
+
+Umm not super sure. But it seems to just work as well. 
+
+For plasmids in a prokaryote to support electron flux as organelle genomes do, high-copy-number giant plasmids encoding components of the electron-transport chain would need to associate with the plasma membrane, and evolve counter to the tendency to segregate with size rather than function
+
+https://nick-lane.net/wp-content/uploads/2016/12/Lane-Martin-Nature-hypothesis.pdf
