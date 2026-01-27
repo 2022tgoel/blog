@@ -84,6 +84,13 @@ When a ligand binds to RTK, this triggers a pair of RTKs to dimerize and phospho
 
 G1, S (Synthesis, DNA replication), G2, M (mitosis, cell division)
 
+##### Mitosis
+1. Prophase: uncondensed, replicated chromatin --> condensed chromosomes
+2. Metaphase: set up of the mitotic spindle where microtubules can pull apart the chromosomes
+3. Anaphase: pull apart
+4. Telophase: cells actually split. 
+
+G0 is a quiescent state where cells exit with no plan to divide
 ###### What are the main mechanisms for initiating cell division?
 
 **Cyclins**, which are are regulatory proteins that bind to and activate cyclin-dependent kinases. CAKs are CDK-activating kinases. RTK signaling induces cyclin gene expression, and therefore is an upstream regulator of this whole process. 

@@ -40,6 +40,30 @@ VDJ recombination is necessary for the antibody to be expressed because to moves
 
 * Even non-live vaccines can get antigens inside cells, because these phagocytes eat up the bacteria, and then present them on MCH II
 
+**Cell-Mediated Immunity** targets the infections that are growing inside of cells through the CD8+ T-cell mechanism. B-cells are for targeting extracellular pathways and can be enhanced by T-cells. 
+
+##### Humoral Immunity in more detail
+
+So basically have this B-cell, which is also an APC (antigen-presenting cell) that goes around detecting stuff. But you don't know if the stuff it is detecting is self or foreign. But helper T-cells that detect self are deleted in the thymus, so it will only be enhanced if it is actually foreign. B-cells don't go through the same kind of strict education that T-cells go under. Helper T-cells are really not supposed to bind to self. 
+
+**Naive B-cells** compose the primary humoral immune response
+
+**Memory B-cells** compose the secondary humoral immune response
+
+If self-reactive T-cells are not deleted in the thymus, then you get autoimmune diseases such that multiple sclerosis. 
+
+### RNA Virus
+
+You can either have a + or - RNA virus. + stranded viruses can be directed translated by the host cell machinery, while - viruses are complementary to the mRNA and need to bring proteins that will make the + copies. The + copy can bootstrap to code for the proteins that will replicate it, so that it is not only translated. 
+
+This is one way a virus could work:
+1. In it a lipid envelope (this is kind of like a vesicle) using the host lipid bilayer, and then a capsid, and the the genome in the very center
+2. It merges with a cell lipid bilayer and releases the contents (the capsid)
+3. the capsid dissembles and releases the genome
+4. the genome gets replicated. If it is a **segmented** virus, and another strain is also present in the cell, then there can be *reassortment* of the strands (antigenic shift) which is different from point mutations (antigenic drift). 
+5. Then it is packaged back up into the caspid
+6. It gets enveloped by the host lipid bilayer and is now free to travel to another cell
+
 ### Memory
 These antibodies have memory, such that
 1. The lag to produce antibodies is shorter
