@@ -1,16 +1,16 @@
 * A **plasmid** is a circular double-stranded DNA molecule. Plasmids are transcribed by the host cell’s machinery, because plasmids contain bacterial promoters. Chromosomes hold essential genes for survival and replicate with the cell, while plasmids are smaller, extrachromosomal DNA loops, often circular, carrying non-essential but advantageous genes (like antibiotic resistance).
 * A **vector** is a plasmid designed to carry foreign DNA. If you just inject a piece of foreign DNA into a cell, it usually gets degraded and doesn't replicate
-* **restriction enzyme**/**restriction endonuclease**: for opening the plasmid so you can insert the gene . You have to make sure that your restriction enzyme only recognizes one piece of the plasmid. 
-* **pBR322**: is a very successful specific plasmid. 
+* **restriction enzyme**/**restriction endonuclease**: for opening the plasmid so you can insert the gene . You have to make sure that your restriction enzyme only recognizes one piece of the plasmid.
+* **pBR322**: is a very successful specific plasmid.
 * **ORI**: origin of replication
-* **ROP**: repressor of primer. encodes a protein that regulates plasmid copy number. when it decides to stopit codes for a protein that blocks off the ORI. 
-* **selectable markers** (e.g., ampicillin resistance gene) help us distinguish between cells with the plasmid and cells without the plasmid. 
+* **ROP**: repressor of primer. encodes a protein that regulates plasmid copy number. when it decides to stopit codes for a protein that blocks off the ORI.
+* **selectable markers** (e.g., ampicillin resistance gene) help us distinguish between cells with the plasmid and cells without the plasmid.
 
 ## AAV
 
-This is a totally different way of delivering genes from a plasmid. 
+This is a totally different way of delivering genes from a plasmid.
 
-AAV is produced in cells (usually HEK293) by **co-transfecting plasmids**. 
+AAV is produced in cells (usually HEK293) by **co-transfecting plasmids**.
 
 **Plasmid 1 — the transfer vector**
 
@@ -18,7 +18,7 @@ contains the gene of interest: `ITR — promoter — gene — polyA — ITR`
 
 **Plasmid 2 -- rep/cap**
 
-Rep proteins bind ITRs, then interacts with the inner surface of assembling capsids and threads the ssDNA (single stranded DNA) into the capsid. 
+Rep proteins bind ITRs, then interacts with the inner surface of assembling capsids and threads the ssDNA (single stranded DNA) into the capsid.
 
 AAV capsids are non-enveloped icosahedral shells (~25 nm). They are made from proteins **VP1**, **VP2**, and **VP3**.
 
@@ -28,7 +28,7 @@ Small amino-acid differences in capsids determine which tissues are infected.
 
 Supplies adenoviral helper functions
 
-The capsid size is relatively constrained. Increasing capsid size would require new protein–protein angles, new curvature, and new interfaces. This is why there is a 4.7 KB of DNA size limit. 
+The capsid size is relatively constrained. Increasing capsid size would require new protein–protein angles, new curvature, and new interfaces. This is why there is a 4.7 KB of DNA size limit.
 
 ### CRISPR
 
@@ -39,9 +39,9 @@ https://stephenmalina.com/post/2023-06-07-editing-part-i/
 
 The vector in this case encodes the genes for a few different things, including:
 - **Cas nuclease** (e.g., Cas9) → cuts DNA
-- **Guide RNA (gRNA)** → tells Cas9 _where_ to cut. 
+- **Guide RNA (gRNA)** → tells Cas9 _where_ to cut.
 - This is different from classical restriction endonucleases, where they are hardwired to cut a a specific spot.
-- **Reverse transcriptase** (RNA-dependent DNA polymerase) is a key molecule that can convert RNA into DNA, so that it can be inserted into the genome. This is how a **retrovirus** works. 
+- **Reverse transcriptase** (RNA-dependent DNA polymerase) is a key molecule that can convert RNA into DNA, so that it can be inserted into the genome. This is how a **retrovirus** works.
 
 * Then, there is a separate component that uses DNA's repair pathway, specifically Homology Directed Repair
 
@@ -50,7 +50,7 @@ Note that plasmids in eukaryotes die out eventually
 
 ## Ligation
 
-When a resitriction endonuclease makes a cut in a plasmid, it leaves "sticky ends". If these match a foreign DNA (because the DNA was processed using the same restriction enzyme) than it will bind to it and the foreign DNA will be incorporated in. However, the phospates and hydroxlys where the foreign dna and the orignal plasmid won't be bonded. DNA ligase creates the phosphodiester bond. 
+When a resitriction endonuclease makes a cut in a plasmid, it leaves "sticky ends". If these match a foreign DNA (because the DNA was processed using the same restriction enzyme) than it will bind to it and the foreign DNA will be incorporated in. However, the phospates and hydroxlys where the foreign dna and the orignal plasmid won't be bonded. DNA ligase creates the phosphodiester bond.
 
 **Functional Complementation**: Take a cell that is defective in some function and restore the phenotype through plasmid injection.
 
@@ -59,4 +59,6 @@ When a resitriction endonuclease makes a cut in a plasmid, it leaves "sticky end
 
 Make a pouch with a bunch of barcodes and a single cell, and then lyse the cell -- the RNA spills out
 
-You have a `[UMI] - poly(dT)`. The `poly(A)` tail in the mRNA binds of the `poly(dT)` tail. Then a reverse transcriptase extends the sequence to `[UMI] - poly(dT) - cDNA`. 
+You have a `[UMI] - poly(dT)`. The `poly(A)` tail in the mRNA binds of the `poly(dT)` tail. Then a reverse transcriptase extends the sequence to `[UMI] - poly(dT) - cDNA`.
+
+* Cloning vectors have a multiple-clonings-site (MCS). Then a gene is inserted there and it becomes and expression vector.

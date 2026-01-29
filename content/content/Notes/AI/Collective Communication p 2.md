@@ -8,7 +8,7 @@ https://textbook.cs168.io/datacenter/topology.html
 **Oversubscription** is a measure of how far from the full bisection bandwidth we are, or equivalently, how overloaded the bottleneck part of the network is. It’s a ratio of the bisection bandwidth to the full bisection bandwidth (the bandwidth if all hosts sent at full rate).
 ![[Pasted image 20260102112806.png]]
 
-If we using a tree to design our topology, you either need a high radix switch of a high bandwidth switch at the top. Could we design a topology that gives high bisection bandwidth, using cheap commodity elements? In particular, we’d like to use a large number of cheap off-the-shelf switches, where all the switches have the same number of ports, each switch has a low number of ports, and all link speeds are the same.
+If we using a tree to design our topology, you either need a high radix switch or a high bandwidth switch at the top. Could we design a topology that gives high bisection bandwidth, using cheap commodity elements? In particular, we’d like to use a large number of cheap off-the-shelf switches, where all the switches have the same number of ports, each switch has a low number of ports, and all link speeds are the same.
 
 ## Butterfly Networks
 ![[Pasted image 20260102101819.png]]
@@ -54,17 +54,19 @@ Realistically, in almost all real Clos (leaf–spine) architectures, a “leaf�
 ![[Screenshot 2026-01-02 at 2.39.03 PM.png]]
 You can kind of do whatever you want for a 3-tiered Clos network (basically strings together a bunch of 2-tiered Clos networks with a top level), but if you are smart about it you don't have to change the bandwidth per link or # of links per switch for the switches at the top level compared to the other levels, while still preserving symmetry (full bisection). Like what the diagram above achieves. 
 
-* $k$ -> # of switches per pod at a single layer ($\sqrt{m}$ where $m$ is the number of devices in a pod)
+Imagine that every node is sending X Gbps to every other node in the graph. 
+
+* $k$ -> # of switches per pod at a single layer ($\sqrt{n}$ where $n$ is the number of devices in a pod, in other words, $k^2 = n$)
 * $m$ is the number of pods. 
 
 * There are $km$ switches on the second layer
 
-* Perserving bandwidth per link: There should be $k^2 m$ links between the 2nd layer and top layer. 
-	* So if you are connecting everything to everything else, you could do $k$ switches at the top level. 
-	* You actually don't need to do this because of some symmetry properties. You can complete graph $k$ groups of $m$ switches (or $\frac{k}{2}$ groups of $2m$ switches, etc.), which would give you $k^2$ switches at the top level (or $\frac{k^2}{2}$, $\frac{k^2}{4}$, etc.) 
-* Perserving links per switch: there should be $2k$ links per switch
-	* If you are connected everything to everything else, you have $km$ links per switch, which tells you that $k=2$. This is the diagram below: 
-	* With group size $m$, you have $m=2k$. 
+* Preserving bandwidth per link: There should be $k^2 m$ links between the 2nd layer and top layer. 
+	* So if you are connecting everything to everything else, you could do $k$ switches at the top level. ($k * km = k^2 m$)
+	* You actually don't need to do this because of some symmetry properties. Let's say you make complete graphs with subgroups. For symmetry, these subgroups need to be containing a multiple of $m$ lower layer switches.  You can complete graph $k$ groups of $m$ switches (or $\frac{k}{2}$ groups of $2m$ switches, etc.). If you choose $k$ groups of $m$ switches, that would give you $k^2$ switches at the top level. This is because each group $g m$ links between them and there are $k$ groups, where $g$ is the number of top-level switches, and solving for $g$ gives you $g = k$. This is the diagram above. (or $\frac{k^2}{2}$, $\frac{k^2}{4}$, etc.) 
+* Preserving links per switch: there should be $2k$ links per switch
+	* If you are connected everything to everything else, you have $km$ links per switch, which tells you that $m=2$. This is the diagram below: 
+	* With group size $m$, you have $m=2k$. This is the diagram above. 
 * 
 ![[Screenshot 2026-01-02 at 2.46.30 PM.png]]
 

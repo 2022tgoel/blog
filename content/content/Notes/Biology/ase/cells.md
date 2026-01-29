@@ -32,6 +32,8 @@ Also, dna repair mechanisms don't work on the telomeres, so they can accumulate 
 * **ER** which is both smooth (no ribosomes) and rough (has ribosomes). The ribosomes on the ER are for sending the protein outside the cell, while the free ribosomes make proteins that stay in the cytoplasm or enter one of the organelles. Actually there is a signaling sequence (called the **signal peptide**, a ~20 amino acid polypeptide) that causes a free ribosome to be bound while it is generating the protein. SRP, or **signal recognition particle**, triggers the binding.
 * **peroxisome**: fatty acid metabolism, detoxification of harmful reactive oxygen species
 * **mitochondria**: carbohydrate metabolism
+* **Nucleolus**: organizes around very specific parts of chromosomes that contain the rDNA (ribosomal DNA)
+	* Humans have NORs on 5 chromosomes: Chromosomes 13, 14, 15, 21, 22
 
 ## Trafficking
 * 50% of proteins don't stay in the cytosol. This is a lot!
