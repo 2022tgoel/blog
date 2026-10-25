@@ -1,3 +1,21 @@
+
+
+
+We have certain intuitive equilibrium conditions for a system + surrounding that isn't transferring heat or doing work
+* $T_\text{system} = T_\text{surroundings}$. This makes sense if under the understanding that $T = \frac{\partial E}{\partial S}$ and that entropy always increases. Supposed $T_\text{system} > T_\text{surroundings}$ , then moving $\delta E$ energy from the system to the surroundings would result in $\delta S =- \frac{\delta E}{T_\text{system}} + \frac{\delta E}{T_\text{surroundings}} > 0$ change in the entropy. 
+* $p_\text{system} = p_\text{surroundings}$. This is about an equilibrium of forces, if this weren't the case than the forces on either side wouldn't cancel out. 
+
+### Enthalpy
+
+$H = E  + PV$
+$\Delta H = T dS + V dp + \mu dN = T dS + \mu dN$ under the constant pressure condition. 
+
+$E = q + w$ 
+$\delta H = \delta Q$
+
+
+### Intuition
+
 We have that
 
 $dE = TdS - pdV + \mu dN$

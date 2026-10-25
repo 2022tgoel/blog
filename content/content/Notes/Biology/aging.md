@@ -98,6 +98,11 @@ A *virtual cell* is a transformer/GNNs that has been fed a bunch of transcriptom
 
 SB000 is a single gene that reverses aging in fibroblasts and is safer. 
 
+### Why We Die
+
+* Genes that benefit the group but not the individual will not survive because of *cheaters* -- there will be people who don't have the gene and still get the benefit. 
+* Calment lived to 122 and smoked for all but the last five years of her life and ate more than two pounds of chocolate every week 
+
 ### Papers
 * https://pubmed.ncbi.nlm.nih.gov/40950238/ 
 
